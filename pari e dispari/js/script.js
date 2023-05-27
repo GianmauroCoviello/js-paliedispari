@@ -4,19 +4,9 @@ let sceltaFatta= (` utente ha scelto: ${scelta}` )
 
 console.log(sceltaFatta)
 
-// VERIFICA PROMPT CON CICLO WHILE
-while (scelta !== 'pari' && scelta !== 'dispari') {
-
-    scelta = prompt('la tua scelta deve essere o pari o dispari')
-}
-
-
 let sceltaNumber = parseInt(prompt('scegli un numero da 1 a 5'))
 
-while (scelta < 1 || sceltaNumber > 5) {
 
-    scelta = prompt('reinserisci il numero')
-}
 
 // FUNZIONE PER GENERARE IL NUMERO RANDOM DEL PC
 function numberRandom(max,min) {
